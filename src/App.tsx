@@ -1,13 +1,29 @@
 import * as React from 'react';
 import './App.css'
 import { Button } from './components/ui/button';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
 
-function App() : React.ReactElement {
+
+
+function App(): React.ReactElement {
 
   return (
     <div className=' flex flex-col text-center justify-around h-[100vh] w-[100vw]'>
-      <h1 className='text-red-500 text-2xl'>Time2Code!</h1>
-      <Button className=" w-40 bg-red-500 rounded-xl hover:bg-gray-500 self-center">This</Button>
+      <Carousel>
+        <CarouselContent>
+          <CarouselItem><h1>A</h1></CarouselItem>
+          <CarouselItem><h2>B</h2></CarouselItem>
+          <CarouselItem><h3>C</h3></CarouselItem>
+        </CarouselContent>
+        <CarouselPrevious />
+        <CarouselNext />
+      </Carousel>
     </div>
   )
 }
