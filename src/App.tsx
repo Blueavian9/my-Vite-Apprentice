@@ -1,13 +1,14 @@
 import * as React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import { cn } from '@/lib/utils';
-import Gallery from './components/Gallery';
 import './App.css'
 
-import Home from '@/components/pages/Home';
-import About from '@/components/pages/About';
-import Projects from '@/components/pages/Projects';
-import Contact from '@/components/pages/Contact';
+import Home from './components/pages/Home';
+import About from './components/pages/About';
+import Projects from './components/pages/Projects';
+import Contact from './components/pages/Contact';
+import Gallery from './components/pages/Gallery';
+import Profile from  './components/pages/Profile';
 
 
 

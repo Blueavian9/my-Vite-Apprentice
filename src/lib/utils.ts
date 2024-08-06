@@ -1,11 +1,11 @@
 import { type ClassValue, clsx } from "clsx";
-import { twMerge } from "tailwind-merge";
-import { cn } from "@/utils";
+import { twMerge as twMergeInternal } from "tailwind-merge";
 
 export function cn(...inputs: ClassValue[]) {
-  return twMerge(clsx(inputs))
+  return twMergeInternal(clsx(inputs));
 }
 
-export function twMerge(value: string): string {
-  return twMerge(value);
+// If you need a separate function for `twMerge`, rename it to avoid conflicts.
+export function customTwMerge(value: string): string {
+  return twMergeInternal(value);
 }
