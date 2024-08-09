@@ -3,12 +3,13 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import { cn } from '@/lib/utils';
 import './App.css'
 
-import Home from './components/pages/Home';
-import About from './components/pages/About';
-import Projects from './components/pages/Projects';
-import Contact from './components/pages/Contact';
-import Gallery from './components/pages/Gallery';
-import Profile from  './components/pages/Profile';
+
+import { Home } from '../Home.tsx';
+import { About } from '../About.tsx';
+import { Projects } from '../Projects';
+import { Github } from '../Github.tsx';
+import { Linkedin } from  '../Linkedin';
+import { Contact } from '../Contact';
 
 
 
@@ -25,7 +26,7 @@ function App(): React.ReactElement {
             </Link>
             <ul className={cn('flex space-x-4')}>
               <li>
-                <Link to="/" className={cn('hover:text-primary')}>
+                <Link to="/home" className={cn('hover:text-primary')}>
                   Home
                 </Link>
               </li>
@@ -54,6 +55,8 @@ function App(): React.ReactElement {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/Linkedin" element={<Linkedin />} />
+            <Route path="/Github" element={<Github />} /> 
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
