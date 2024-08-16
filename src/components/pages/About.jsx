@@ -5,7 +5,7 @@ export default function About() {
       <section className="flex  flex-col" >
         <h1>About Contributions</h1>
         <div className="flex gap-6">
-            <About />
+            About 
         </div>
       </section>
     );

@@ -5,7 +5,7 @@ export default function Home() {
       <section className="flex  flex-col" >
         <h1>Amazing Contributions</h1>
         <div className="flex gap-6">
-            <Home />
+            Home 
         </div>
       </section>
     );

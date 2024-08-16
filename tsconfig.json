@@ -1,15 +1,8 @@
-{
-  "compilerOptions": {
-    "jsx": "react",
-    "baseUrl": ".",
-    "paths": {
-      "@/*": [
-        "./src/*"
-      ]
-    }, 
-    "moduleResolution": "node",
-    "module": "esnext",
-    "target": "esnext"
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [],
+  theme: {
+    extend: {},
   },
-  "include": ["src"] 
+  plugins: [],
 }
